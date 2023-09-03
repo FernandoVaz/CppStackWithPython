@@ -1,6 +1,10 @@
 build
+ctags
+CTAGS
 CppServerPlatform
 build/*
+Testing/*
+Testing
 CMakeFiles
 CMakeCache.txt
 cmake_install.cmake
