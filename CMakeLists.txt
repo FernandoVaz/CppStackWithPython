@@ -1,7 +1,9 @@
 cmake_minimum_required(VERSION "3.19.2")
+project(CppServerPlatform)
 
-project("CppServerPlatform")
-add_executable("CppServerPlatform" "src/main.cpp")
+# GoogleTest requires at least C++14
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_test("CppServerTest" "test/test_main.cpp")
+add_executable(CppServerPlatform src/main.cpp)
 add_subdirectory(test)
